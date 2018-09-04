@@ -20,7 +20,7 @@ https://api.tw.bitasset.com/
 Test URL:
 http://test.tw.bitasset.com/
 
-\
+ \
 
 ## <a name="head1"></a>1. Third-party Payment Receipt API
 
@@ -54,14 +54,16 @@ Newly create thirdparty payment transaction with user Id, bank Id and Transactio
 `transferStatus` 's initial status is `Pending`
 `transferStatus` has `Pending`, `Success`, `Cancelled`, `Failed`
 
-The status will be changed with the next API `/core/thirdparty/notify/[user Id]/Bank ID]/[TransactionID]`
+The status can be changed with the next API `/core/thirdparty/notify/[user Id]/Bank ID]/[TransactionID]`
 
-\
+ \
 > note:
 > In a perfect situation, user ID is actually not required but in order to make sure synchronization of User data is done prior to making a transaction, so we need the user ID to double check everything is correct.
 
+> Important
+> I assume `User` to `UserBank` is a one-to many relationship and bank to transaction is a one-to-many relationship. But when third party payment is used, it is assumed to be the role of the `UserBank`. If this assumption is incorrect, please inform me asap.
 
-\
+ \
 
 ### POST `/core/thirdparty/[user Id]/[Bank ID]/[TransactionID]`
 
@@ -87,7 +89,7 @@ The parameter used is the same as PUT operation
 ## <a name="head2"></a>2. Third-party Payment WriteOff(对账) API
 
 
-<to be continued...>
+to be continued...
 
 
 ```sss
