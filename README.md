@@ -9,7 +9,7 @@ This documentation contains API end points for the following services
 3.  Future works to be announced.
 
 Live URL:
-https://tw.bitasset.com/
+https://api.tw.bitasset.com/
 
 Test URL:
 http://test.tw.bitasset.com/
