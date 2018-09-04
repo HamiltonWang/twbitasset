@@ -1,4 +1,5 @@
-# twbitasset
+## tw.bitasset.com API
+
 API endpoint for tw.bitasset.com
 
 This documentation contains API end points for the following services
