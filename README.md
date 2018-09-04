@@ -22,7 +22,7 @@ http://test.tw.bitasset.com/
 
 ## <a name="head1"></a>1. Third-party Payment Receipt API
 
-### PUT `/core/thirdparty/[user Id]/Bank ID]/[TransactionID]`
+### PUT `/core/thirdparty/[user Id]/[Bank ID]/[TransactionID]`
 
 Newly create thirdparty payment transaction with user Id, bank Id and Transaction ID.
 
@@ -59,14 +59,16 @@ The status will be changed with the next API `/core/thirdparty/notify/[user Id]/
 > In a perfect situation, user ID is actually not required but in order to make sure synchronization of User data is done prior to making a transaction, so we need the user ID to double check everything is correct.
 
 
-### POST `/core/thirdparty/[user Id]/Bank ID]/[TransactionID]`
+
+### POST `/core/thirdparty/[user Id]/[Bank ID]/[TransactionID]`
 
 Update Transaction in case there are changes
 
 #### Request:
 The parameter used is the same as PUT operation
 
-### POST `/core/thirdparty/notify/[user Id]/Bank ID]/[TransactionID]`
+
+### POST `/core/thirdparty/notify/[user Id]/[Bank ID]/[TransactionID]`
 
 #### Request:
 | sno | Field type | field name      |  memo               |
