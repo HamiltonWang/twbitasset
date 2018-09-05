@@ -5,14 +5,13 @@ API endpoint for tw.bitasset.com
 This documentation contains API end points for the following services
 
 1.  [Third party Payment Receiption API](#head1)
-2.  [Third party payment WriteOff(对账) API](#head2)
-3.  [User data one-way synchronization REST API](#head3)
-3-1.  User
-3-2.  UserBank
-3-3.  asset_cny_bank_bill_detail
-4.  Bank Transfer Payment Receiption API (Not yet implemented)
-5.  Bank Transfer Payment Receiption WriteOff(对账) API (Not yet implemented)
-6.  Future works to be announced.
+2.  [User data one-way synchronization REST API](#head2)
+2-1.  User
+2-2.  UserBank
+2-3.  asset_cny_bank_bill_detail
+3.  Bank Transfer Payment Receiption API (Not yet implemented)
+4.  Bank Transfer Payment Receiption WriteOff(对账) API (Not yet implemented)
+5.  Future works to be announced.
 \
 Live URL:
 https://api.tw.bitasset.com/
@@ -86,7 +85,7 @@ The parameter used is the same as PUT operation
 
 \
 
-## <a name="head2"></a>2. Third-party Payment WriteOff(对账) API
+## <a name="head2"></a>2. User data one-way synchronization REST API
 
 
 to be continued...
