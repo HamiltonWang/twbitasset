@@ -24,7 +24,7 @@ http://test.tw.bitasset.com/
 
 ## <a name="head1"></a>1. Third-party Payment Receipt API
 
-### PUT `/core/thirdparty/[user Id]/[Bank ID]/[TransactionID]`
+### PUT `/core/TWDThirdPartyBill/[TransactionID]`
 
 Newly create thirdparty payment transaction with user Id, bank Id and Transaction ID.
 
@@ -65,7 +65,7 @@ The status can be changed with the next API `/core/thirdparty/notify/[user Id]/B
 
  \
 
-### POST `/core/thirdparty/[user Id]/[Bank ID]/[TransactionID]`
+### POST `/core/TWDThirdPartyBill/`
 
 Update Transaction in case there are changes
 
@@ -74,7 +74,7 @@ The parameter used is the same as PUT operation
 
 \
 
-### POST `/core/thirdparty/notify/[user Id]/[Bank ID]/[TransactionID]`
+### POST `/core/TWDThirdPartyBill/notify/[TransactionID]`
 
 #### Request:
 | sno | Field type | field name      |  memo               |
