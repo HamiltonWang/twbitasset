@@ -80,8 +80,8 @@ The parameter used is the same as PUT operation
 |-----|------------|-----------------|---------------------|
 | 1   | String     | transferStatus  | 交易狀態            |
 | 2   | String     | notifyErrorCode | 请参考 八，错误代码 |
-| 3   | String     | notify_message  | 回傳訊息            |
-| 4   | JSON       | notify_result   | 回傳資料            |
+| 3   | String     | notifyMessage  | 回傳訊息            |
+| 4   | JSON       | notifyResult   | 回傳資料            |
 
 \
 
