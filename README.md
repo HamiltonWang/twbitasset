@@ -12,14 +12,16 @@ This documentation contains API end points for the following services
 3.  Bank Transfer Payment Receiption API (Not yet implemented)
 4.  Bank Transfer Payment Receiption WriteOff(对账) API (Not yet implemented)
 5.  Future works to be announced.
-\
+
+
 Live URL:
 https://api.tw.bitasset.com/
+
 
 Test URL:
 http://test.tw.bitasset.com/
 
- \
+
 
 ## <a name="head1"></a>1. Third-party Payment Receipt API
 
