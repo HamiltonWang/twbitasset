@@ -4,7 +4,9 @@ API endpoint for tw.bitasset.com
 
 This documentation contains API end points for the following services
 
-documentation version:1.4
+reference: third party payment documentation version:1.4
+https://cwww.spgateway.com/website/Page/content/download_api
+
 
 1.  [Third party Payment Receiption API](#head1)
 2.  [User data one-way synchronization REST API](#head2)
