@@ -39,18 +39,21 @@ Newly create thirdparty payment transaction with user Id, bank Id and Transactio
 | 4   | Date       | transferTime       | 交易日期              |
 | 5   | String     | transferStatus     | 交易狀態              |
 | 6   | String     | metchantId         | 商家代碼              |
-| 7   | String     | checkValue         | 檢查碼                |
-| 8   | String     | itemDesc           | 商品資訊              |
-| 9   | BigDecimal | transferFromAmount | 金額                  |
-| 10  | String     | email              | Email                 |
-| 11  | String     | orderComment       | 商店備註              |
-| 12  | Boolean    | credit             | 信用卡 一次付清啟用   |
-| 13  | Boolean    | instFlag           | 信用卡 分期付款啟用   |
-| 14  | Boolean    | unionPay           | 銀聯卡啟用            |
-| 15  | Boolean    | webatm             | WEBATM 啟用           |
-| 16  | Boolean    | vacc               | ATM 轉帳啟用          |
-| 17  | Boolean    | cvs                | CVS 超商代碼繳費 啟用 |
-| 18  | Boolean    | barcode            | Barcode 條碼繳費啟用  |
+| 7   | String     | tradeInfo          | 檢查碼                |
+| 8   | String     | tradeSha           | 檢查碼                |
+| 9   | String     | itemDesc           | 商品資訊              |
+| 10  | BigDecimal | transferFromAmount | 金額                  |
+| 11  | String     | email              | Email                 |
+| 12  | String     | orderComment       | 商店備註              |
+| 13  | Boolean    | credit             | 信用卡 一次付清啟用   |
+| 14  | Boolean    | instFlag           | 信用卡 分期付款啟用   |
+| 15  | Boolean    | unionPay           | 銀聯卡啟用            |
+| 16  | Boolean    | webatm             | WEBATM 啟用           |
+| 17  | Boolean    | vacc               | ATM 轉帳啟用          |
+| 18  | Boolean    | creditRed          | 信用卡紅利支付方式 啟用 |
+| 19  | Boolean    | p2g                | Pay2go 電子錢包支付  |
+| 20  | Boolean    | barcode            | Barcode 條碼繳費啟用  |
+
 
 `transferStatus` 's initial status is `Pending`
 `transferStatus` has `Pending`, `Success`, `Cancelled`, `Failed`
@@ -81,10 +84,12 @@ The parameter used is the same as PUT operation
 | sno | Field type | field name      |  memo               |
 |-----|------------|-----------------|---------------------|
 | 1   | String     | transferStatus  | 交易狀態            |
-| 2   | String     | notifyErrorCode | 请参考 八，错误代码 |
-| 3   | String     | notifyMessage  | 回傳訊息            |
-| 4   | JSON       | notifyResult   | 回傳資料            |
+| 2   | String     | notifypaymentType  | 支付方式 请参考 note1           |
+| 3   | String     | notifyErrorCode | 请参考 八，错误代码 |
+| 4   | String     | notifyMessage  | 回傳訊息            |
+| 5   | JSON       | notifyResult   | 回傳資料            |
 
+note1: 支付方式 = CREDIT、ANDROIDPAY、SAMSUNGPAY、InstFlag、CreditRed、 UNIONPAY、WEBATM、VACC、CVS、BARCODE、P2G、CVSCOM
 \
 
 ## <a name="head2"></a>2. User data one-way synchronization REST API
