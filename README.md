@@ -4,6 +4,8 @@ API endpoint for tw.bitasset.com
 
 This documentation contains API end points for the following services
 
+documentation version:1.4
+
 1.  [Third party Payment Receiption API](#head1)
 2.  [User data one-way synchronization REST API](#head2)
 2-1.  User
